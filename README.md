@@ -11,7 +11,7 @@ CNIC, phone, IBAN and NTN validation · FBR salary tax calculator (FY2026-27) ·
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Node](https://img.shields.io/badge/node-%3E%3D18-339933)
 
-📖 **[Read the full guide](https://zexcart.site/pakistan-toolkit/)** · 🧮 **[Try the free online tools](https://zexcart.site/dev-tools/)** (salary tax calculator, amount in words, CNIC/phone/IBAN checker)
+📖 **[Read the full guide](https://zexcart.site/pakistan-toolkit/)** · 🧮 **[Try the free online tools](https://zexcart.site/pakistan-toolkit/#tools)** (salary tax calculator, amount in words, CNIC/phone/IBAN checker)
 
 ---
 
