@@ -1,0 +1,54 @@
+{
+  "name": "pakistan-toolkit",
+  "version": "1.0.0",
+  "description": "Zero-dependency toolkit for Pakistani apps: CNIC, phone, IBAN & NTN validation, FBR income tax calculator, PKR lakh/crore formatting, amount-in-words, and ready-to-use data for provinces, cities and banks.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./data/*": "./data/*"
+  },
+  "files": [
+    "src",
+    "data",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build:data": "node scripts/build-data.js"
+  },
+  "keywords": [
+    "pakistan",
+    "cnic",
+    "nadra",
+    "iban",
+    "pkr",
+    "fbr",
+    "income-tax",
+    "lakh",
+    "crore",
+    "validation",
+    "jazzcash",
+    "easypaisa",
+    "urdu"
+  ],
+  "author": "mubasher1111",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubasher1111/pakistan-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mubasher1111/pakistan-toolkit/issues"
+  },
+  "homepage": "https://github.com/mubasher1111/pakistan-toolkit#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}

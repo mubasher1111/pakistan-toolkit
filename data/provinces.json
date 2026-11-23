@@ -1,0 +1,51 @@
+[
+  {
+    "code": "PK-PB",
+    "name": "Punjab",
+    "urdu": "پنجاب",
+    "capital": "Lahore",
+    "type": "province"
+  },
+  {
+    "code": "PK-SD",
+    "name": "Sindh",
+    "urdu": "سندھ",
+    "capital": "Karachi",
+    "type": "province"
+  },
+  {
+    "code": "PK-KP",
+    "name": "Khyber Pakhtunkhwa",
+    "urdu": "خیبر پختونخوا",
+    "capital": "Peshawar",
+    "type": "province"
+  },
+  {
+    "code": "PK-BA",
+    "name": "Balochistan",
+    "urdu": "بلوچستان",
+    "capital": "Quetta",
+    "type": "province"
+  },
+  {
+    "code": "PK-IS",
+    "name": "Islamabad Capital Territory",
+    "urdu": "اسلام آباد",
+    "capital": "Islamabad",
+    "type": "territory"
+  },
+  {
+    "code": "PK-GB",
+    "name": "Gilgit-Baltistan",
+    "urdu": "گلگت بلتستان",
+    "capital": "Gilgit",
+    "type": "territory"
+  },
+  {
+    "code": "PK-JK",
+    "name": "Azad Jammu & Kashmir",
+    "urdu": "آزاد جموں و کشمیر",
+    "capital": "Muzaffarabad",
+    "type": "territory"
+  }
+]

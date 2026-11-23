@@ -1,0 +1,158 @@
+[
+  {
+    "code": "ABPA",
+    "name": "Allied Bank Limited",
+    "short": "ABL",
+    "type": "conventional"
+  },
+  {
+    "code": "AIIN",
+    "name": "Al Baraka Bank (Pakistan) Limited",
+    "short": "Al Baraka",
+    "type": "islamic"
+  },
+  {
+    "code": "ALFH",
+    "name": "Bank Alfalah Limited",
+    "short": "Bank Alfalah",
+    "type": "conventional"
+  },
+  {
+    "code": "ASCM",
+    "name": "Askari Bank Limited",
+    "short": "Askari",
+    "type": "conventional"
+  },
+  {
+    "code": "BAHL",
+    "name": "Bank AL Habib Limited",
+    "short": "BAHL",
+    "type": "conventional"
+  },
+  {
+    "code": "BKIP",
+    "name": "BankIslami Pakistan Limited",
+    "short": "BankIslami",
+    "type": "islamic"
+  },
+  {
+    "code": "BPUN",
+    "name": "The Bank of Punjab",
+    "short": "BOP",
+    "type": "conventional"
+  },
+  {
+    "code": "CITI",
+    "name": "Citibank N.A. Pakistan",
+    "short": "Citibank",
+    "type": "conventional"
+  },
+  {
+    "code": "DUIB",
+    "name": "Dubai Islamic Bank Pakistan Limited",
+    "short": "DIB",
+    "type": "islamic"
+  },
+  {
+    "code": "FAYS",
+    "name": "Faysal Bank Limited",
+    "short": "Faysal",
+    "type": "islamic"
+  },
+  {
+    "code": "HABB",
+    "name": "Habib Bank Limited",
+    "short": "HBL",
+    "type": "conventional"
+  },
+  {
+    "code": "JCMA",
+    "name": "Mobilink Microfinance Bank Limited (JazzCash)",
+    "short": "JazzCash",
+    "type": "microfinance"
+  },
+  {
+    "code": "JSBL",
+    "name": "JS Bank Limited",
+    "short": "JS Bank",
+    "type": "conventional"
+  },
+  {
+    "code": "KHYB",
+    "name": "The Bank of Khyber",
+    "short": "BOK",
+    "type": "conventional"
+  },
+  {
+    "code": "MCIB",
+    "name": "MCB Islamic Bank Limited",
+    "short": "MCB Islamic",
+    "type": "islamic"
+  },
+  {
+    "code": "MEZN",
+    "name": "Meezan Bank Limited",
+    "short": "Meezan",
+    "type": "islamic"
+  },
+  {
+    "code": "MPBL",
+    "name": "Habib Metropolitan Bank Limited",
+    "short": "HabibMetro",
+    "type": "conventional"
+  },
+  {
+    "code": "MUCB",
+    "name": "MCB Bank Limited",
+    "short": "MCB",
+    "type": "conventional"
+  },
+  {
+    "code": "NBPA",
+    "name": "National Bank of Pakistan",
+    "short": "NBP",
+    "type": "conventional"
+  },
+  {
+    "code": "SAUD",
+    "name": "Silkbank Limited",
+    "short": "Silkbank",
+    "type": "conventional"
+  },
+  {
+    "code": "SCBL",
+    "name": "Standard Chartered Bank (Pakistan) Limited",
+    "short": "SCB",
+    "type": "conventional"
+  },
+  {
+    "code": "SIND",
+    "name": "Sindh Bank Limited",
+    "short": "Sindh Bank",
+    "type": "conventional"
+  },
+  {
+    "code": "SONE",
+    "name": "Soneri Bank Limited",
+    "short": "Soneri",
+    "type": "conventional"
+  },
+  {
+    "code": "SUMB",
+    "name": "Summit Bank Limited",
+    "short": "Summit",
+    "type": "conventional"
+  },
+  {
+    "code": "TMFB",
+    "name": "Telenor Microfinance Bank Limited (Easypaisa)",
+    "short": "Easypaisa",
+    "type": "microfinance"
+  },
+  {
+    "code": "UNIL",
+    "name": "United Bank Limited",
+    "short": "UBL",
+    "type": "conventional"
+  }
+]

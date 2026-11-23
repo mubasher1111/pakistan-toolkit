@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Lahore",
+    "urdu": "لاہور",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Faisalabad",
+    "urdu": "فیصل آباد",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Rawalpindi",
+    "urdu": "راولپنڈی",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Gujranwala",
+    "urdu": "گوجرانوالہ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Multan",
+    "urdu": "ملتان",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Bahawalpur",
+    "urdu": "بہاولپور",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Sargodha",
+    "urdu": "سرگودھا",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Sialkot",
+    "urdu": "سیالکوٹ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Sheikhupura",
+    "urdu": "شیخوپورہ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Rahim Yar Khan",
+    "urdu": "رحیم یار خان",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Jhang",
+    "urdu": "جھنگ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Dera Ghazi Khan",
+    "urdu": "ڈیرہ غازی خان",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Gujrat",
+    "urdu": "گجرات",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Sahiwal",
+    "urdu": "ساہیوال",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Kasur",
+    "urdu": "قصور",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Okara",
+    "urdu": "اوکاڑہ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Chiniot",
+    "urdu": "چنیوٹ",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Jhelum",
+    "urdu": "جہلم",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Khanewal",
+    "urdu": "خانیوال",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Vehari",
+    "urdu": "وہاڑی",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Attock",
+    "urdu": "اٹک",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Hafizabad",
+    "urdu": "حافظ آباد",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Mandi Bahauddin",
+    "urdu": "منڈی بہاؤالدین",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Taxila",
+    "urdu": "ٹیکسلا",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Murree",
+    "urdu": "مری",
+    "province": "PK-PB"
+  },
+  {
+    "name": "Karachi",
+    "urdu": "کراچی",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Hyderabad",
+    "urdu": "حیدرآباد",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Sukkur",
+    "urdu": "سکھر",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Larkana",
+    "urdu": "لاڑکانہ",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Nawabshah",
+    "urdu": "نوابشاہ",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Mirpur Khas",
+    "urdu": "میرپور خاص",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Jacobabad",
+    "urdu": "جیکب آباد",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Thatta",
+    "urdu": "ٹھٹہ",
+    "province": "PK-SD"
+  },
+  {
+    "name": "Peshawar",
+    "urdu": "پشاور",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Mardan",
+    "urdu": "مردان",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Mingora",
+    "urdu": "مینگورہ",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Abbottabad",
+    "urdu": "ایبٹ آباد",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Kohat",
+    "urdu": "کوہاٹ",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Dera Ismail Khan",
+    "urdu": "ڈیرہ اسماعیل خان",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Bannu",
+    "urdu": "بنوں",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Mansehra",
+    "urdu": "مانسہرہ",
+    "province": "PK-KP"
+  },
+  {
+    "name": "Quetta",
+    "urdu": "کوئٹہ",
+    "province": "PK-BA"
+  },
+  {
+    "name": "Gwadar",
+    "urdu": "گوادر",
+    "province": "PK-BA"
+  },
+  {
+    "name": "Turbat",
+    "urdu": "تربت",
+    "province": "PK-BA"
+  },
+  {
+    "name": "Khuzdar",
+    "urdu": "خضدار",
+    "province": "PK-BA"
+  },
+  {
+    "name": "Chaman",
+    "urdu": "چمن",
+    "province": "PK-BA"
+  },
+  {
+    "name": "Islamabad",
+    "urdu": "اسلام آباد",
+    "province": "PK-IS"
+  },
+  {
+    "name": "Gilgit",
+    "urdu": "گلگت",
+    "province": "PK-GB"
+  },
+  {
+    "name": "Skardu",
+    "urdu": "سکردو",
+    "province": "PK-GB"
+  },
+  {
+    "name": "Muzaffarabad",
+    "urdu": "مظفرآباد",
+    "province": "PK-JK"
+  },
+  {
+    "name": "Mirpur",
+    "urdu": "میرپور",
+    "province": "PK-JK"
+  },
+  {
+    "name": "Kotli",
+    "urdu": "کوٹلی",
+    "province": "PK-JK"
+  }
+]
