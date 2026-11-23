@@ -5,7 +5,7 @@ CNIC, phone, IBAN and NTN validation · FBR salary tax calculator (FY2026-27) ·
 
 > Har Pakistani developer yeh code baar baar likhta hai: CNIC validation, `03XX` numbers, IBAN check, tax calculation, "Rs 1,50,000". Ab dobara likhne ki zarurat nahi.
 
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+[![Tests](https://github.com/mubasher1111/pakistan-toolkit/actions/workflows/test.yml/badge.svg)](https://github.com/mubasher1111/pakistan-toolkit/actions/workflows/test.yml)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Node](https://img.shields.io/badge/node-%3E%3D18-339933)
