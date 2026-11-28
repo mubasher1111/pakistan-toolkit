@@ -8,6 +8,8 @@ export {
   getSupportedYears,
   TAX_SLABS,
   LATEST_FISCAL_YEAR,
+  fiscalYearForDate,
+  resolveTaxYear,
 } from './tax.js';
 export { formatLakh, formatPKR, toShortPKR, numberToWords, amountToWords } from './currency.js';
 export { provinces, cities, banks, getCitiesByProvince, findBank } from './data.js';

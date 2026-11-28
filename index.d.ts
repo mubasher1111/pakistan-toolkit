@@ -62,6 +62,21 @@ export interface TaxTable {
 export interface SalaryTaxResult {
   year: FiscalYear;
   taxYear: number;
+  /** 'requested' (you passed year), 'current' (today's fiscal year) or 'latest-available' (today's year not added yet) */
+  yearSource: 'requested' | 'current' | 'latest-available';
+  /** Explains a fallback to an older year; null otherwise */
+  yearNote: string | null;
+  /** Other income included in taxableIncome */
+  otherIncome: number;
+  /** Salary (incl. bonus) + otherIncome */
+  taxableIncome: number;
+  /** Salary as a percentage of taxable income */
+  salaryShare: number;
+  /** Present when taxDeducted was given */
+  taxDeducted?: number;
+  /** annualTax - taxDeducted: positive = still payable, negative = refundable */
+  balance?: number;
+  balanceStatus?: 'payable' | 'refundable' | 'settled';
   annualIncome: number;
   monthlyIncome: number;
   baseTax: number;
@@ -80,11 +95,27 @@ export interface SalaryTaxResult {
 export interface SalaryTaxOptions {
   annualIncome?: number;
   monthlyIncome?: number;
+  /** Salary that changed during the year, e.g. [{ months: 6, monthlyIncome: 150000 }, { months: 6, monthlyIncome: 200000 }] */
+  salaryPeriods?: { months: number; monthlyIncome: number }[];
+  /** Bonus or other lump-sum taxable salary */
+  bonus?: number;
+  /** Other income taxed at normal rates (e.g. business/freelance). Not rent, bank profit, dividends or capital gains. */
+  otherIncome?: number;
+  /** Tax already deducted for the year (e.g. by the employer) */
+  taxDeducted?: number;
+  /** Default: the current fiscal year (falls back to the latest available, with yearNote) */
   year?: FiscalYear;
+  /** Date used to pick the current fiscal year (default: today) */
+  date?: Date | string;
 }
 export const TAX_SLABS: Record<FiscalYear, TaxTable>;
 export const LATEST_FISCAL_YEAR: FiscalYear;
 export function getSupportedYears(): FiscalYear[];
+/** Fiscal year (July-June) of a date, e.g. '2026-27'. */
+export function fiscalYearForDate(date?: Date | string): string;
+export function resolveTaxYear(options?: { year?: FiscalYear; date?: Date | string }): {
+  year: FiscalYear; source: 'requested' | 'current' | 'latest-available'; note: string | null;
+};
 export function calculateSalaryTax(options: SalaryTaxOptions): SalaryTaxResult;
 export function compareSalaryTax(options: {
   annualIncome?: number;

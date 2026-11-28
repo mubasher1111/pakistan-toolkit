@@ -1,6 +1,6 @@
 {
   "name": "pakistan-toolkit",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Zero-dependency toolkit for Pakistani apps: CNIC, phone, IBAN & NTN validation, FBR income tax calculator, PKR lakh/crore formatting, amount-in-words, and ready-to-use data for provinces, cities and banks.",
   "type": "module",
   "main": "./src/index.js",

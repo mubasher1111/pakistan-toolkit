@@ -122,14 +122,32 @@ getNTNType('3520212345673');   // 'cnic' (CNIC used as NTN for individuals)
 ### Income tax (salaried)
 
 ```js
-calculateSalaryTax({ monthlyIncome: 300_000 });               // latest year (2026-27)
+calculateSalaryTax({ monthlyIncome: 300_000 });               // current fiscal year (by today's date)
 calculateSalaryTax({ annualIncome: 3_600_000, year: '2025-26' });
+
+// Salary changed mid-year, plus a bonus
+calculateSalaryTax({
+  salaryPeriods: [{ months: 6, monthlyIncome: 150_000 }, { months: 6, monthlyIncome: 200_000 }],
+  bonus: 300_000,
+}); // annualTax: 156000
+
+// Refund or still payable? Pass the tax already deducted by your employer
+calculateSalaryTax({ monthlyIncome: 200_000, taxDeducted: 150_000 });
+// { annualTax: 156000, balance: 6000, balanceStatus: 'payable', ... }
+
+// Salary + freelance/business income: salaried slabs apply only if salary is MORE than 75% of taxable income
+calculateSalaryTax({ annualIncome: 2_000_000, otherIncome: 400_000 }); // salaryShare: 83.33, annualTax: 156000
+calculateSalaryTax({ annualIncome: 1_500_000, otherIncome: 500_000 }); // throws (code 'NOT_SALARIED')
 
 compareSalaryTax({ monthlyIncome: 300_000, from: '2025-26', to: '2026-27' });
 // { annualSaving: 50000, monthlySaving: 4166.67, from: {...}, to: {...} }
 ```
 
-Each result contains `annualTax`, `monthlyTax`, `baseTax`, `surcharge`, `annualTakeHome`, `monthlyTakeHome`, `effectiveRate` (%), `marginalRate` (%) and `slab`.
+Each result contains `year` and `taxYear` (so you can always see which rules were used), `annualTax`, `monthlyTax`, `baseTax`, `surcharge`, `taxableIncome`, `salaryShare` (%), `annualTakeHome`, `monthlyTakeHome`, `effectiveRate` (%), `marginalRate` (%) and `slab`, plus `taxDeducted`, `balance` and `balanceStatus` when you pass `taxDeducted`.
+
+**Which year?** Without `year`, the fiscal year (July–June) of today's date is used. If that year's slabs aren't in your version yet (e.g. right after a budget), the latest available year is used and `yearSource: 'latest-available'` and `yearNote` say so. `fiscalYearForDate(date)` gives the fiscal year of any date.
+
+`otherIncome` is income taxed at normal rates, such as business or freelance income. Rent, bank profit, dividends and capital gains are taxed separately, so don't include them.
 
 **FY2026-27 salaried slabs (Finance Act 2026)**
 
@@ -146,7 +164,7 @@ Each result contains `annualTax`, `monthlyTax`, `baseTax`, `surcharge`, `annualT
 
 There is no surcharge for salaried individuals in FY2026-27. FY2025-26 had a 9% surcharge above Rs 10M and FY2024-25 had 10%. All slabs are in [`src/tax.js`](src/tax.js) as `TAX_SLABS`.
 
-> ⚠️ This is an estimate for planning. It does not cover exemptions, tax credits, rebates or non-salaried income, and it is not tax advice. Check [fbr.gov.pk](https://www.fbr.gov.pk) or a tax professional before filing.
+> ⚠️ This is an estimate for planning. It covers salaried individuals only (not the non-salaried slabs), ignores exemptions, tax credits and rebates, and it is not tax advice. Check [fbr.gov.pk](https://www.fbr.gov.pk) or a tax professional before filing.
 
 ### Currency
 
